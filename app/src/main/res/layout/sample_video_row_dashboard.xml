@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#E5DFDF"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample_row_profile_pic"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:src="@drawable/user_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:layout_toRightOf="@id/sample_row_profile_pic"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_5sdp"
+                android:textStyle="bold"
+                />
+
+
+            <ImageButton
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#E5DFDF"
+                android:src="@drawable/sample_row_options" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.exoplayer2.ui.StyledPlayerView
+            android:id="@+id/sample_row_exoPlayer_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/sample_row_love"
+
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/sample_row_unlove"
+                android:backgroundTint="#E5DFDF"
+                />
+
+            <TextView
+                android:id="@+id/sample_row_Liketext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/sample_row_comment"
+                android:layout_toRightOf="@+id/sample_row_love"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/sample_row_comment"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#E5DFDF"
+                android:scaleType="center"
+                />
+
+            <ImageButton
+                android:id="@+id/sample_row_send"
+                android:layout_toRightOf="@id/sample_row_comment"
+
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/sample_row_send"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#E5DFDF"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sample_row_Status"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="This is for status"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15sdp"
+
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

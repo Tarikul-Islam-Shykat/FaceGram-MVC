@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/smaple_cardView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/sample_row_newsHeading"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="Main heading will display here "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/sample_row_newsContent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:textColor="@color/black"
+                    android:text="Main content will display here"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/sample_row_newsImage"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/sample_row_newsAuthorName"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="by Birju um jakaria"
+                android:textStyle="italic"
+                android:textColor="@color/purple_200"
+                android:padding="5dp"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/sample_row_newsDate"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Published At"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.userProfile_Controller">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfile_userImage"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/user_image_add"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/userProfile_userName"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfile_userImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="Please enter you name" />
+
+    <TextView
+        android:id="@+id/userName_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfile_userSaveBTN"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <Button
+        android:id="@+id/userProfile_userSaveBTN"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfile_userName"
+        android:layout_centerHorizontal="true"
+        android:text="save" />
+</RelativeLayout>

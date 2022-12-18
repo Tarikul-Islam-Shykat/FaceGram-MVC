@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.explore_Controller">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/am_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Feed"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#03a9f4"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/am_tabLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/am_toolbar"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#03A9F4"
+        app:tabTextColor="#618C8F">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/am_tabItem_sports"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/am_tabItem_chill"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entertainment" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/am_tabLayout"
+        android:layout_marginTop="0dp"
+        />
+
+</RelativeLayout>
